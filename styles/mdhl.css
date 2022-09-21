@@ -1,0 +1,177 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::marker{
+    font-weight: bold;
+}
+
+
+span {
+
+    font-weight: bold;
+    
+  
+  }
+
+body{
+    font-family: cursive;
+}
+
+.title{
+
+    margin: 25px 25px 10px 22px;
+}
+
+
+.container-log-tit{
+    background:  url("../assets/design1_image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 65vh;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+
+div > h3{
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+
+/*
+.container-log-tit > a{
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+
+*/
+.logo img{
+    
+    max-width: 130px;
+
+}
+
+
+.container-main{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 5%;
+}
+
+.container-main-rules{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-nav{
+    position: absolute;
+    right: 1.6vw;
+    top: 7vh;
+    height: 190px;
+}
+.container-nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+
+.container-nav ul > li a{
+    color: white;
+    padding: 0.2rem 1rem;
+    margin: 0px 5px;
+    border: 0.2rem solid black;
+    box-shadow: 4px 4px 2px 0px rgb(0 0 0 / 45%);
+}
+
+
+
+
+
+.btn{
+
+    background-color: rgb(80 74 184);
+
+}
+
+#selected{
+    background-color: rgb(40, 136, 33);
+}
+
+.container-article{
+    margin-left: 5%;
+}
+.container-article h4{
+    padding: 5px;
+}
+
+.container-article h5, .container-article p, .container-article div{
+    padding: 5px 35px;
+}
+
+
+
+
+.parrafo-Sangria{
+    text-indent: 40px;
+  }
+
+  .sub-list{
+    margin-left: 100px;
+    list-style-type: circle;
+  }
+
+  ol{
+    padding: 0px;
+    list-style-position:inside; 
+  }
+
+.container{
+
+  width: 60%;
+  margin:  15px 0px;
+
+}
+
+
+
+ol > li{
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+th, td {
+  padding: 10px 20px 10px 0px;
+}
+
+.container-header-gameInfo , .container-footer{
+  margin: 5% 25%;
+}
+
+tbody tr td:first-child{
+  padding-left: 80px;
+}
+
+
+
+
+.container-nav ul > li a:hover{
+  border-radius: 15px;
+  padding: 5px 18px;
+  margin: 15px;
+  transition: .3s ease-out;
+}
