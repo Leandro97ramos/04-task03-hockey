@@ -3,70 +3,213 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 ::marker{
     font-weight: bold;
 }
 
+body{
+  font-family: cursive;
+}
 
 span {
-
-    font-weight: bold;
-    
+  text-align: left;
+  font-weight: bold;
   
-  }
 
-body{
-    font-family: cursive;
 }
 
 .title{
 
-    margin: 25px 25px 10px 22px;
+  margin: 25px 25px 10px 22px;
 }
 
+.hero-gradient{
+  position: absolute;
 
-.container-log-tit{
-    background:  url("../assets/design1_image2.jpg");
-    background-repeat: no-repeat;
-    background-position: center ;
-    height: 65vh;
-    display: flex;
-    flex-direction: column-reverse;
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.856));
+
+  width: 100%;
+  height: 100%;
+  animation-name: presentation ;
+  animation-duration: 3s;
+}
+.container-header{
+  background-image:  url(../assets/design1_image2.jpg);
+background-repeat: no-repeat;
+  background-position: center ;   
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 10px 15px -4px rgb(0 0 0 / 57%);
+  animation-name: movingGradient;
+  animation-duration: 4s;
+}
+
+.container-title-nav h1{
+  position: relative;
+  width: 55%;
+  font-size: 50px;
+ /* top: 40%;
+  left: 25%;*/
+  color: white;
+
+
+}
+.subtitle-linkeable{
+  background: black;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  z-index: 1;
+  
+}
+
+.subtitle-linkeable a{
+  color: #fff;
 
 }
 
-
-div > h3{
-    background: black;
-    color: aliceblue;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px 0px;
+.logo{
+ 
 }
 
-/*
-.container-log-tit > a{
-    background: black;
-    color: aliceblue;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px 0px;
-}
-
-*/
 .logo img{
-    
-    max-width: 130px;
+  
+  max-width: 250px;
 
 }
 
 
 .container-main{
-    display: flex;
-    flex-direction: row;
-    margin: 30px 5%;
+ 
+  margin: 30px 5%;
+}
+
+.container-nav{
+  position: absolute;
+  right: 1vw;
+  top: 4vh;
+  height: 190px;
+}
+.container-nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+
+.container-nav ul > li a{
+  color: white;
+  padding: 0.2rem 1rem;
+  margin: 0px 5px;
+  border: 0.2rem solid black;
+  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 1.9);
+}
+
+
+.container-nav ul > li a:hover{
+  border-radius: 15px;
+  padding: 5px 18px;
+  margin: 15px;
+  transition: .3s ease-out;
+}
+
+
+
+
+.btn{
+
+  background-color: rgb(80 74 184);
+
+}
+
+#selected{
+  background-color: rgb(40, 136, 33);
+}
+
+.container-article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+
+/* Card */
+
+
+
+.card{
+  position: relative;
+  background-color: (255,255,255,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  max-height: 750px;
+  width: 270px;
+  margin: 5%;
+}
+
+.card:hover .gradient{
+  opacity:1;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gradient{
+  position: absolute;
+  /* gradiente transparente */
+  background-image: linear-gradient(0deg, #009ece61 , transparent);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-desc{
+  padding: 33px;
+}
+.card-title{
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid #000;
+ 
+
+}
+.footer-content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+}
+.social{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 15px;
+
+}
+
+.container-footer .social  img{
+  max-width: 35px;
+  background: white;
 }
 
 .container-main-rules{
@@ -112,14 +255,11 @@ div > h3{
     background-color: rgb(40, 136, 33);
 }
 
-.container-article{
-    margin-left: 5%;
-}
 .container-article h4{
     padding: 5px;
 }
 
-.container-article h5, .container-article p, .container-article div{
+.container-article h5, .container-article p{
     padding: 5px 35px;
 }
 
