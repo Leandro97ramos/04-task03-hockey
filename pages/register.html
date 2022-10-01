@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/mdhl.css">
+</head>
+
+<body>
+    <header class="container-header">
+        <div class="hero-gradient"></div>
+
+        <div class="container-title-nav">
+            <h1>Mighty Ducks Hockey League</h1>
+            <nav class="container-nav">
+                <ul>
+                    <li><a class="btn " href="../home.html">Home</a></li>
+                    <li><a class="btn" href="./about.html">About</a></li>
+                    <li><a class="btn" href="./contact.html">Contact</a></li>
+                    <li><a class="btn" href="./rules.html">Rules</a></li>
+                    <li><a class="btn" href="./gameInformation.html">Game Info</a></li>
+                    <li><a class="btn" id="selected" href="./register.html">Register</a></li>
+    
+    
+                </ul>
+            </nav>
+    
+        </div>
+
+        <div class="subtitle-linkeable">
+
+            <a>Register</a>
+
+        </div>
+    </header>
+   
+
+    <main>
+     
+
+        <h1 class="title-center">Registration Form</h1>
+        <form action="show_data.html" method="GET" class="container-form">
+            <div class="container-inp primary-info">
+                <div class=" double">
+                    <div class="combo">
+
+                        <label for="first">Player's First Name</label>
+                        <input type="text" name="first-name" id="first" placeholder="">
+                    </div>
+
+                    <div class="combo">
+                        <label for="last-name">Last Name:</label>
+                        <input name="last-name" id="last-name" type="text">
+                    </div>
+                </div>
+                <div class=" simple">
+                    <label for="street-ad">Street Address:</label>
+                    <input name="street-ad" type="text">
+                </div>
+
+                <div class=" double">
+                    <div class="combo">
+
+                        <label for="city">City:</label>
+                        <input name="city" type="text">
+                    </div>
+                    <div class="combo">
+
+                        <label for="zz-code">Zip Code</label>
+                        <input name="zz-code" type="text">
+                    </div>
+                </div>
+
+                <div class=" double">
+                    <div class="combo">
+
+                        <label for="birth">Birth Date(mm/dd/yyyy):</label>
+                        <input name="birth" type="date">
+                    </div>
+
+                    <label for="gender">Gender:</label>
+
+                    <div class="combo">
+
+                        <input name="female" type="radio" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="combo">
+
+                        <input name="male" type="radio" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                </div>
+
+                <div class="grade double">
+
+                    <label for="grade">Grade:</label>
+                    <input type="radio" name="grade"> Pre-School
+                    <input type="radio" name="grade" value="1"> 1°
+                    <input type="radio" name="grade" value="2"> 2°
+                    <input type="radio" name="grade" value="3"> 3°
+                    <input type="radio" name="grade" value="4"> 4°
+                    <input type="radio" name="grade" value="5"> 5°
+                </div>
+
+            </div>
+
+
+            <div class="container-inp secondary-info">
+                <h3>Which elementary school do you live near?</h3>
+                <h4>Closest School</h4>
+                <div class=" container-select">
+
+                    <input type="checkbox" value="Aj Katzenmaier">Aj Katzenmaier
+                    <input type="checkbox" value="Marjorie P Hart">Marjorie P Hart
+                    <input type="checkbox" value="Greenbay">Greenbay
+                    <input type="checkbox" value="North Elementary">North Elementary
+                    <input type="checkbox" value="Howard A Yeager">Howard A Yeager
+                    <input type="checkbox" value="South Elementary">South Elementary
+
+                </div>
+            </div>
+
+            <!--
+            <fieldset>
+                <legend>What position(s) do you normally play ? (check all that apply)</legend>
+                
+                
+            -->
+
+
+            <div class="container-inp third-info">
+
+                <h3>What position(s) do you normally play ? (check all that apply)</h3>
+                <div class="container-select">
+
+                    <input type="checkbox" value="Forward">Forward
+                    <input type="checkbox" value="Midfield">Midfield
+                    <input type="checkbox" value="Defense">Defense
+                    <input type="checkbox" value="Goalkeeper">Goalkeeper
+
+                </div>
+
+            </div>
+            <div class="container-inp fourth-info">
+                <h3>Uniform Size:</h3>
+                <div class="container-select">
+
+                    <input type="radio" name="size-uniform" value="Youth Smal">Youth Smal
+                    <input type="radio" name="size-uniform" value="Medium">Medium
+                    <input type="radio" name="size-uniform" value="Youth Medium">Youth Medium
+                    <input type="radio" name="size-uniform" value="Large">Large
+                    <input type="radio" name="size-uniform" value="Youth Large">Youth Large
+                    <input type="radio" name="size-uniform" value="Extra-Large">Extra-Large
+                    <input type="radio" name="size-uniform" value="Small">Small
+
+                </div>
+            </div>
+
+            <div class="container-inp fifth">
+                <h3>Permission to Play</h3>
+                <p>
+                    I , the parent or guardian of the minor registrant,agree that the registrant and i will abide all by
+                    all
+                    the rules of the Migthy Ducks Hockey Legue (MDHL). In recognizing the possibility of physical injury
+                    associated with hockey and in consideration for the "League" accepting the registrant for its hockey
+                    programs and activities, i hereby release ,discharge, and/or otherwise indemnify MDHL, their
+                    employees
+                    and associated personnel and volunteers, including the facilities used for practices and games,
+                    against
+                    any claim by or on behalf of the registrant as a result of the registrant's participation in the
+                    programand/orbeing transported to or from MDHL sponsored activities , wich transportation by signing
+                    below, i herebyagree andauthorizethe above. In addition , by signing below , i also acknowledge that
+                    i
+                    have read the cancellation policy and agree to its terms.
+                </p>
+
+                <div class="signature">
+
+
+                    <div class="container-inp-simple">
+                        <label for="parent">Parent/GuardianSignature</label>
+                        <input type="text" name="parent">
+
+                    </div>
+                    <div class="container-inp-simple">
+                        <label for="parent-date">Date</label>
+                        <input type="text" name="parent-date">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-inp sixth">
+
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+ <footer id="footer" class="container-footer">
+        <div class="footer-content">
+            <div class="foot-sec-one">
+                <p><span>Please direct all questions to</span> Michael Randall, League Coordinator</p>
+            </div>
+            <div class="foot-sec-two">
+                <p><span>Phone:</span> (630) 690-8132</p>
+                <p><span>Email:</span> michael.randall@chihockey.org</p>
+            </div>
+            <div class="social">
+                <div class="face">
+                    <a href=""><img src="../assets/face.png" alt=""> </a>
+                </div>
+                <div class="twit">
+                    <a href=""><img src="../assets/twt.png" alt=""> </a>
+                </div>
+                <div class="you">
+                    <a href=""><img src="../assets/youtube.png" alt=""> </a>
+                </div>
+                <div class="insta">
+                    <a href=""><img src="../assets/insta.png" alt=""> </a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../assets/Logo-01.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+
+
+</html>
